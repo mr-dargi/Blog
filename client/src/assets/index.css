@@ -1,0 +1,47 @@
+/* Import fonts */
+@font-face {
+  font-family: "Sahel";
+  src: url("./fonts/Sahel.ttf");
+  src: url("./fonts/Sahel.woff");
+}
+
+@font-face {
+  font-family: "Sahel-black";
+  src: url("./fonts/Sahel-Black.ttf");
+  src: url("./fonts/Sahel-Black.woff");
+}
+
+@font-face {
+  font-family: "Sahel-bold";
+  src: url("./fonts/Sahel-Bold.ttf");
+  src: url("./fonts/Sahel-Bold.woff");
+}
+
+/* General */
+* {
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+/* Navbar section  */
+.NavBar {
+  font-family: Sahel-bold;
+}
+
+#navbarScroll {
+  flex-grow: 0 !important;
+}
+
+.brand {
+  font-family: 'Satisfy', cursive;
+  font-size: 48px;
+}
+
+/* Error page  */
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
