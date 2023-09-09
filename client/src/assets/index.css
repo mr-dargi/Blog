@@ -37,6 +37,11 @@
   font-size: 48px;
 }
 
+/* Card section */
+.card-img-top {
+  height: 180px;
+}
+
 /* Error page  */
 #error-page {
   display: flex;
