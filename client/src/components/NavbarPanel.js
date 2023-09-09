@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // Navbar Section Using React Bootstarp
 export default function NavBar() {
   return (
-    <Navbar expand="lg" className="NavBar bg-body-white">
+    <Navbar expand="md" className="NavBar bg-body-white">
       <Container fluid>
         {/* ------------------------------------------
          Toggle bar button collapsible menu for phone 

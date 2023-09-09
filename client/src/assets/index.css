@@ -26,6 +26,7 @@
 /* Navbar section  */
 .NavBar {
   font-family: Sahel-bold;
+  height: 86px;
 }
 
 #navbarScroll {
@@ -38,8 +39,15 @@
 }
 
 /* Card section */
+.card {
+  box-shadow: 0 50px 40px 10px rgb(243, 243, 243);
+  border: 1px solid rgb(241, 241, 241) !important;
+  border-radius: 0 !important;
+}
+
 .card-img-top {
-  height: 180px;
+  height: 190px;
+  border-radius: 0 !important;
 }
 
 /* Error page  */
@@ -49,4 +57,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .NavBar {
+    box-shadow: 0 2px 5px 0px rgb(129, 129, 129);
+    border: 1px solid rgb(236, 236, 236);
+    background-color: white;
+    z-index: 1;
+    position: sticky !important;
+    top: 0;
+  }
 }
