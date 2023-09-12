@@ -26,7 +26,7 @@ export default function NavBar() {
         </Navbar.Collapse>
         <Navbar.Brand as={Link} to="/" className="brand d-flex justify-content-center col-lg-4">DailyBits</Navbar.Brand>
         <Nav>
-          <Nav.Link as={Link} to="/category">ورودی | ثبت نام</Nav.Link>
+          <Nav.Link as={Link} to="/login">ورودی | ثبت نام</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

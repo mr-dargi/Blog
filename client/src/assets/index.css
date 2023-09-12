@@ -41,7 +41,7 @@
 /* Card section */
 .card {
   box-shadow: 0 50px 40px 10px rgb(243, 243, 243);
-  border: 1px solid rgb(241, 241, 241) !important;
+  border: 1px solid rgb(216, 216, 216) !important;
   border-radius: 0 !important;
 }
 
@@ -60,6 +60,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+  /* Navbar section  */
+  /*
+     For small devices I add some shadow to Navbar
+     and make it sticky to move with scroll
+  */
   .NavBar {
     box-shadow: 0 2px 5px 0px rgb(129, 129, 129);
     border: 1px solid rgb(236, 236, 236);

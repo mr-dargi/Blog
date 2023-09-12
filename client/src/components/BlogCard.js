@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 // Cart Component 
-export default function Cart() {
+export default function BlogCard(props) {
   // Create card with react bootstrap 
   return (
     <div className="col-12 col-sm-6 col-md-4 col-xl-3">
@@ -19,7 +19,7 @@ export default function Cart() {
           ------------------------------------------*/}
           <Card.Img 
             className="card-img-top" 
-            src="/download.jpeg" 
+            src={ props.blog.photo_url } 
             alt="Card image"
           />
           {/*------------------------------------------
