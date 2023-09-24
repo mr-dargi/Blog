@@ -9,7 +9,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Components & Css file
 import App from './App';
 import ErrorPage from './components/ErrorPage';
-import Posts from './components/Posts';
+import Posts from './components/BlogList';
+import BlogDetails from './components/BlogDetails';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './assets/index.css';
 
 
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Posts />
+      },
+      {
+        path: "/blogs/:id",
+        element: <BlogDetails />
       }
     ]
   }

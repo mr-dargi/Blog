@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setData } from '../redux/features/blogSlice';
 
 
-// Create a Posts.js for show the cards in our main page
+// Create a BlogList for show the cards in our main page
 export default function Posts() {
   // Using useFetch to fetch data from url and use it in
   // out cards
@@ -21,19 +21,23 @@ export default function Posts() {
     <div>در حال بارگذازی ....</div>
 
   return (
-    <div 
-      className="row"
-      style={{ 
-        width: "100%", 
-        padding: "20px 20px",
-        margin: "0",
-      }}
-    >
-      {/* ------------------------------------------
-        If there is an error it will not render
-        a blogPosts
-      ------------------------------------------ */}
-      {  error ? error : blogPosts }
-    </div>
+    <section id="blog" className="blog">
+      <div className="container" data-aos="fade-up">
+
+        <div className="row g-5">
+
+          <div className="col-lg-8">
+
+            <div class="row gy-4 posts-list">
+              {/* ------------------------------------------
+                If there is an error it will not render
+                a blogPosts
+              ------------------------------------------ */}
+              {  error ? error : blogPosts }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

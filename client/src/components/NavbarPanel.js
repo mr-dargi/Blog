@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // Navbar Section Using React Bootstarp
 export default function NavBar() {
   return (
-    <Navbar expand="md" className="NavBar bg-body-white">
+    <Navbar expand="md" className="NavBar navbar-inverse bg-body-white">
       <Container fluid>
         {/* ------------------------------------------
          Toggle bar button collapsible menu for phone 
@@ -18,7 +18,7 @@ export default function NavBar() {
          Menu that is collapsible for phone 
         ------------------------------------------ */}
         <Navbar.Collapse id="navbarScroll" className="justify-content-start">
-          <Nav>
+          <Nav className="bg-body-white">
             <Nav.Link as={Link} to="/">وبلاگ</Nav.Link>
             <Nav.Link as={Link} to="/about">درباره ما</Nav.Link>
             <Nav.Link as={Link} to="/contact">ارتباط با ما</Nav.Link>
@@ -30,5 +30,7 @@ export default function NavBar() {
         </Nav>
       </Container>
     </Navbar>
+
+    
   );
 }

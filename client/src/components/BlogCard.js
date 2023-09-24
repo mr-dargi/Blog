@@ -1,49 +1,52 @@
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-
 // Cart Component 
 export default function BlogCard(props) {
+  console.log(props)
+  const dateTime = new Date(props.blog.updated_at)
   // Create card with react bootstrap 
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-xl-3">
-      <Card
-        style={{ 
-          width: "auto",
-          height: "550px",
-          padding: "0",
-          margin: "30px 0 0 10px"
-        }}
-      >
-          {/*------------------------------------------
-            Card image section:
-          ------------------------------------------*/}
-          <Card.Img 
-            className="card-img-top" 
-            src={ props.blog.photo_url } 
-            alt="Card image"
-          />
-          {/*------------------------------------------
-            Card body section  
-          ------------------------------------------*/}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
-          {/*------------------------------------------
-            Footer section of the card that's contains
-            author name
-          ------------------------------------------*/}
-        <ListGroup className="list-group-flush">
-          <ListGroup.Item>
-          <Card.Body>
-            <Card.Link href="#">Card Link</Card.Link>
-          </Card.Body>
-        </ListGroup.Item>
-        </ListGroup>
-      </Card>
-    </div>
+          <div className="col-lg-6">
+            <article className="d-flex flex-column">
+
+              <div className="post-img">
+                <img src={ props.blog.photo_url } alt="" className="img-fluid" />
+              </div>
+
+              <h2 className="title">
+                <a href="blog-details.html">
+                  { props.blog.titile }
+                </a>
+              </h2>
+
+              <div className="meta-top">
+                <ul>
+                  <li className="d-flex align-items-center">
+                    <i className="bi bi-person"></i> 
+                    <a href="blog-details.html">John Doe</a>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <i className="bi bi-clock"></i> 
+                    <a href="blog-details.html">
+                      <time>{ dateTime.toDateString() }</time>
+                    </a>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <i className="bi bi-chat-dots"></i> 
+                    <a href="blog-details.html">12 Comments</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="content">
+                <p>
+                  { props.blog.description }
+                </p>
+              </div>
+
+              <div className="read-more mt-auto align-self-end">
+                <a href="blog-details.html">Read More</a>
+              </div>
+
+            </article>
+          </div>
   );
 }
