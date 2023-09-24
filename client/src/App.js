@@ -1,4 +1,5 @@
 import NavBar from "./components/NavbarPanel";
+import CategoryBox from "./components/CategoryBox";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
     <div className="App">
       <NavBar />
 
-      <div className="container-fluid">
+      <div className="main container">
+        <CategoryBox />
         <Outlet />
       </div>
     </div>

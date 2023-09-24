@@ -12,6 +12,7 @@ import ErrorPage from './components/ErrorPage';
 import Posts from './components/BlogList';
 import BlogDetails from './components/BlogDetails';
 import "bootstrap/dist/css/bootstrap.css";
+import "./assets/bootstrap-icons/bootstrap-icons.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import './assets/index.css';
 

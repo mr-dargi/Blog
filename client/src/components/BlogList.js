@@ -24,9 +24,7 @@ export default function Posts() {
     <section id="blog" className="blog">
       <div className="container" data-aos="fade-up">
 
-        <div className="row g-5">
-
-          <div className="col-lg-8">
+          <div className="col-lg-12">
 
             <div class="row gy-4 posts-list">
               {/* ------------------------------------------
@@ -36,7 +34,6 @@ export default function Posts() {
               {  error ? error : blogPosts }
             </div>
           </div>
-        </div>
       </div>
     </section>
   );

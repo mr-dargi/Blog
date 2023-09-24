@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // Cart Component 
 export default function BlogCard(props) {
   console.log(props)
@@ -12,9 +14,9 @@ export default function BlogCard(props) {
               </div>
 
               <h2 className="title">
-                <a href="blog-details.html">
-                  { props.blog.titile }
-                </a>
+                <Link to="/blog/detail/:id">
+                  { props.blog.title }
+                </Link>
               </h2>
 
               <div className="meta-top">
